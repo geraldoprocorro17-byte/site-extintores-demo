@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Site demonstrativo de venda, recarga e manutenção de extintores.">
+  <title>Protec Fire | Extintores e Segurança</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="topbar"><span>MODELO DEMONSTRATIVO</span><span>Venda • Recarga • Manutenção</span></div>
+
+  <header class="cabecalho">
+    <nav class="navegacao container" aria-label="Navegação principal">
+      <a href="#inicio" class="marca" aria-label="Protec Fire, voltar ao início">
+        <span class="marca-icone">✦</span> PROTEC<span>FIRE</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-links">☰</button>
+      <div class="menu-links" id="menu-links">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#produtos">Extintores</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <a class="botao botao-escuro nav-cta" href="#contato">Solicitar orçamento <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-texto">
+          <div class="eyebrow"><span class="dot"></span> SEGURANÇA PARA O QUE IMPORTA</div>
+          <h1>Proteção que faz a <em>diferença.</em></h1>
+          <p>Venda, recarga e manutenção de extintores para empresas, comércios, condomínios e muito mais.</p>
+          <div class="hero-acoes">
+            <a href="#contato" class="botao botao-vermelho">Solicitar um orçamento <span>↗</span></a>
+            <a href="#servicos" class="botao botao-outline">Conhecer serviços <span>↓</span></a>
+          </div>
+          <div class="hero-nota"><span class="check">✓</span> Atendimento personalizado <span class="separador"></span> <span class="check">✓</span> Soluções sob medida</div>
+        </div>
+        <div class="hero-imagem">
+          <img src="https://images.unsplash.com/photo-1496745109441-36ea45fed379?auto=format&fit=crop&w=1100&q=85" alt="Extintor de incêndio vermelho instalado em uma parede">
+          <div class="imagem-selo"><span>✦</span><div><strong>PROTEÇÃO</strong><small>começa com prevenção</small></div></div>
+        </div>
+      </div>
+      <div class="hero-linha"></div>
+    </section>
+
+    <section class="intro-faixa" aria-label="Nossos diferenciais">
+      <div class="container faixa-grid">
+        <div><span>01</span><strong>Produtos para proteção</strong></div>
+        <div><span>02</span><strong>Serviços especializados</strong></div>
+        <div><span>03</span><strong>Orçamento pelo WhatsApp</strong></div>
+      </div>
+    </section>
+
+    <section class="secao" id="servicos">
+      <div class="container">
+        <div class="secao-cabecalho"><div><span class="tag">O QUE FAZEMOS</span><h2>Soluções completas em <span>extintores.</span></h2></div><p>Do equipamento ao cuidado contínuo, apresentamos os serviços essenciais para proteger seu ambiente.</p></div>
+        <div class="servicos-grid">
+          <article class="servico-card"><div class="servico-icone">🧯</div><span class="numero">01 / SERVIÇO</span><h3>Venda de extintores</h3><p>Opções de equipamentos para diferentes necessidades de proteção. Consulte modelos e disponibilidade.</p><a href="#contato">Peça uma cotação <span>↗</span></a></article>
+          <article class="servico-card"><div class="servico-icone">↻</div><span class="numero">02 / SERVIÇO</span><h3>Recarga de extintores</h3><p>Solicite uma avaliação para recarga dos equipamentos de acordo com a necessidade e condições de cada item.</p><a href="#contato">Solicitar recarga <span>↗</span></a></article>
+          <article class="servico-card"><div class="servico-icone">⚙</div><span class="numero">03 / SERVIÇO</span><h3>Manutenção</h3><p>Serviços de verificação e manutenção de extintores. Converse com a equipe sobre seu equipamento.</p><a href="#contato">Consultar serviço <span>↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao produtos-secao" id="produtos">
+      <div class="container">
+        <div class="secao-cabecalho"><div><span class="tag">LINHA DE PRODUTOS</span><h2>Equipamentos para cada <span>necessidade.</span></h2></div><p>Modelos ilustrativos para a demonstração. Os produtos reais serão informados pela empresa.</p></div>
+        <div class="filtros" role="group" aria-label="Filtrar produtos">
+          <button class="filtro ativo" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button class="filtro" data-filtro="po" aria-pressed="false">Pó químico</button>
+          <button class="filtro" data-filtro="co2" aria-pressed="false">CO₂</button>
+          <button class="filtro" data-filtro="agua" aria-pressed="false">Água</button>
+        </div>
+        <div class="produtos-grid" id="produtos-grid">
+          <article class="produto-card" data-tipo="po"><div class="produto-imagem"><img loading="lazy" src="https://images.unsplash.com/photo-1651054549146-09fb37f4486f?auto=format&fit=crop&w=800&q=80" alt="Fotografia ilustrativa de extintor vermelho"><span>ILUSTRATIVO</span></div><div class="produto-info"><small>PÓ QUÍMICO</small><h3>Extintor de pó ABC</h3><p>Consulte capacidades e modelos disponíveis.</p><a href="#contato" data-produto="Extintor de pó ABC">Solicitar cotação ↗</a></div></article>
+          <article class="produto-card" data-tipo="co2"><div class="produto-imagem"><img loading="lazy" src="https://images.unsplash.com/photo-1772034736198-b194e4d72a1e?auto=format&fit=crop&w=800&q=80" alt="Fotografia ilustrativa de extintor em ambiente interno"><span>ILUSTRATIVO</span></div><div class="produto-info"><small>GÁS CARBÔNICO</small><h3>Extintor de CO₂</h3><p>Conheça opções para seu ambiente.</p><a href="#contato" data-produto="Extintor de CO2">Solicitar cotação ↗</a></div></article>
+          <article class="produto-card" data-tipo="agua"><div class="produto-imagem"><img loading="lazy" src="https://images.unsplash.com/photo-1496745109441-36ea45fed379?auto=format&fit=crop&w=800&q=80" alt="Fotografia ilustrativa de extintor na parede"><span>ILUSTRATIVO</span></div><div class="produto-info"><small>ÁGUA PRESSURIZADA</small><h3>Extintor de água</h3><p>Consulte modelos e especificações.</p><a href="#contato" data-produto="Extintor de água">Solicitar cotação ↗</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre-secao" id="sobre"><div class="container sobre-grid"><div class="sobre-foto"><img loading="lazy" src="https://images.unsplash.com/photo-1772034736198-b194e4d72a1e?auto=format&fit=crop&w=1050&q=85" alt="Extintor de incêndio instalado em ambiente interno"><span class="sobre-detalhe">SEGURANÇA EM PRIMEIRO LUGAR</span></div><div class="sobre-texto"><span class="tag">SOBRE A EMPRESA</span><h2>Seu negócio merece mais <span>tranquilidade.</span></h2><p>Uma apresentação profissional ajuda seus clientes a encontrar equipamentos e serviços de proteção contra incêndio em um único lugar.</p><p>Este é um modelo de site. Aqui entraremos com a história, os diferenciais, a região atendida e as informações reais da empresa.</p><a href="#contato" class="botao botao-vermelho">Falar com a equipe ↗</a></div></div></section>
+
+    <section class="cta-secao"><div class="container cta-bloco"><div><span class="tag tag-clara">PRECISA DE AJUDA?</span><h2>Vamos cuidar da sua <em>segurança?</em></h2><p>Converse com a equipe e solicite um orçamento para sua necessidade.</p></div><a href="#contato" class="botao botao-branco">Solicitar orçamento ↗</a></div></section>
+
+    <section class="secao contato-secao" id="contato"><div class="container contato-grid"><div><span class="tag">FALE CONOSCO</span><h2>Peça seu <span>orçamento.</span></h2><p>Preencha os dados e clique para preparar uma mensagem de WhatsApp. Nesta demonstração, o número será configurado após a aprovação.</p><div class="contato-info"><strong>Horário de atendimento</strong><span>A informar pela empresa</span><strong>Área atendida</strong><span>A informar pela empresa</span></div></div><form id="form-orcamento" class="formulario"><label for="nome">Seu nome</label><input id="nome" name="nome" placeholder="Como podemos chamar você?" required maxlength="80"><label for="telefone">Seu WhatsApp</label><input id="telefone" name="telefone" inputmode="tel" placeholder="(12) 99999-9999" required maxlength="25"><label for="servico">O que você precisa?</label><select id="servico" name="servico"><option>Venda de extintores</option><option>Recarga de extintores</option><option>Manutenção de extintores</option><option>Outras informações</option></select><label for="mensagem">Detalhes (opcional)</label><textarea id="mensagem" name="mensagem" rows="3" placeholder="Conte um pouco sobre o que precisa..."></textarea><button type="submit" class="botao botao-vermelho botao-form">Preparar mensagem para WhatsApp ↗</button><small>O formulário não armazena dados nem envia informações a um servidor.</small></form></div></section>
+  </main>
+
+  <footer class="rodape"><div class="container footer-grid"><div><a href="#inicio" class="marca"><span class="marca-icone">✦</span> PROTEC<span>FIRE</span></a><p>Site demonstrativo. Nome, imagens e informações serão personalizados para a empresa contratante.</p></div><div><strong>Navegação</strong><a href="#servicos">Serviços</a><a href="#produtos">Produtos</a><a href="#contato">Contato</a></div></div><div class="container copyright"><span>© <span id="ano"></span> Protec Fire. Modelo demonstrativo.</span><span>Desenvolvido com HTML, CSS e JavaScript.</span></div></footer>
+</body>
+</html>
